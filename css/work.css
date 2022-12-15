@@ -1,0 +1,123 @@
+:root {
+  --font-base: "DM Sans", sans-serif;
+
+  --primary-color: #edf2f8;
+  --secondary-color: #247af2;
+  --black-color: #030303;
+  --lightGray-color: #e4e4e4;
+  --gray-color: #6b7688;
+  --brown-color: #46364a;
+  --white-color: #ffffff;
+}
+
+.work {
+  height: 100vh;
+  padding-top: 50px;
+}
+
+.work__header {
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--secondary-color);
+  margin: 30px 0;
+}
+
+.work__categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+
+.work__cat {
+  margin: 10px;
+  background-color: var(--lightGray-color);
+  font-weight: 700;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.work__cat:hover {
+  color: var(--white-color);
+  background-color: var(--secondary-color);
+}
+
+.work__cat-active {
+  color: var(--white-color);
+  background-color: var(--secondary-color);
+}
+
+.work__works {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.work__item {
+  margin: 30px;
+}
+
+.work__card {
+  width: 300px;
+  padding: 20px;
+  background-color: var(--lightGray-color);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.work__card-main {
+  position: relative;
+}
+
+.work__card-img {
+  width: 100%;
+  height: 190px;
+  border-radius: 10px;
+}
+
+.work__card h3 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.work__card:hover {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+}
+
+.work__card-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 190px;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0;
+  border-radius: 10px;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.work__card-overlay div {
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 12px;
+}
+
+.work__card-overlay div i {
+  color: var(--white-color);
+  font-size: 20px;
+}
+
+.work .work__card-main:hover > .work__card-overlay {
+  opacity: 1;
+}

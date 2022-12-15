@@ -1,0 +1,83 @@
+:root {
+  --font-base: "DM Sans", sans-serif;
+
+  --primary-color: #edf2f8;
+  --secondary-color: #247af2;
+  --black-color: #030303;
+  --lightGray-color: #e4e4e4;
+  --gray-color: #6b7688;
+  --brown-color: #46364a;
+  --white-color: #ffffff;
+}
+
+.testimonial {
+  padding: 5% 0 10% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+}
+
+.testimonial__container {
+  display: flex;
+
+  background: var(--lightGray-color);
+  width: 50%;
+  padding: 40px 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.4);
+}
+
+.testimonial__img img {
+  width: 100px;
+}
+
+.testimonial__info {
+  margin-left: 30px;
+}
+
+.testimonial__info p {
+  margin-bottom: 70px;
+}
+
+.testimonial__navs {
+  display: flex;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.testimonial__navs div {
+  border-radius: 50%;
+  background-color: var(--lightGray-color);
+  width: 40px;
+  height: 40px;
+  margin: 12px;
+  color: var(--secondary-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: all 0.4s ease-in-out;
+}
+
+.testimonial__navs div:hover {
+  color: var(--white-color);
+  background: var(--secondary-color);
+}
+
+.testimonial__logos {
+  margin-top: 50px;
+}
+
+.testimonial__logos img {
+  width: 160px;
+  height: 71px;
+  margin: 10px;
+  filter: grayscale(1);
+}
+
+.testimonial__logos img:hover {
+  filter: grayscale(0);
+}

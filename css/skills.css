@@ -1,0 +1,81 @@
+:root {
+  --font-base: "DM Sans", sans-serif;
+
+  --primary-color: #edf2f8;
+  --secondary-color: #247af2;
+  --black-color: #030303;
+  --lightGray-color: #e4e4e4;
+  --gray-color: #6b7688;
+  --brown-color: #46364a;
+  --white-color: #ffffff;
+}
+
+.skills {
+  padding: 30px;
+  background-color: var(--lightGray-color);
+}
+
+.skills__content {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+.skills__all-skills {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  margin-right: 5rem;
+}
+
+.skills__skill {
+  max-width: 100px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills__circle {
+  border-radius: 50%;
+  background-color: var(--white-color);
+  padding: 20px;
+}
+
+.skills__circle img {
+  width: 50px;
+  height: 50px;
+}
+
+.skills__skill h5 {
+  margin-top: 10px;
+}
+
+.skills__years {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.skills__year {
+  display: flex;
+
+  justify-content: center;
+}
+
+.skills__year-value {
+  margin-right: 40px;
+}
+
+.skills__infos {
+  margin-bottom: 20px;
+}
